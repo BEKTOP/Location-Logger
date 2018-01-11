@@ -1,0 +1,36 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="@string/pref_default_filetype"
+        android:entries="@array/pref_filetype_titles"
+        android:entryValues="@array/pref_filetype_values"
+        android:key="@string/filetype_key"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_filetype" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_file_name"
+        android:inputType="textCapWords"
+        android:key="@string/log_filename_key"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_file_name" />
+
+    <Preference
+        android:key="pref_static_field_key"
+        android:selectable="false"
+        android:persistent="false"
+        android:title="Log File Location"
+        android:summary="Public Storage/Documents"
+        android:enabled="false"/>
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/keep_screen_on_key"
+        android:title="@string/pref_title_keep_screen_on" />
+
+
+</PreferenceScreen>
+

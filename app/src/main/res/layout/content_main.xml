@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.darryncampbell.locationlogger.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/db1_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.darryncampbell.locationlogger.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="2dip"
+        >
+
+        <TextView
+            android:id="@+id/lblGpsCurrentLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS: "
+            android:textColor="@color/zebraBlue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCurrentGpsLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Pending..." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="2dip"
+        >
+
+        <TextView
+            android:id="@+id/lblCurrentNetworkLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network: "
+            android:textColor="@color/zebraBlue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCurrentNetworkLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Pending..." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="2dip"
+        >
+
+        <TextView
+            android:id="@+id/lblCurrentFusedLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fused: "
+            android:textColor="@color/zebraBlue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCurrentFusedLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Pending..." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="2dip"
+        >
+
+        <TextView
+            android:id="@+id/lblApBasedLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AP Based: "
+            android:textColor="@color/zebraBlue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCurrentApBasedLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Updated when Position Pinned" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="@color/zebraBlue"
+        android:layout_marginBottom="2dip"
+        />
+
+    <ListView
+        android:id="@+id/location_list"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/zebraWhite">
+
+    </ListView>
+
+
+
+
+
+
+</LinearLayout>
